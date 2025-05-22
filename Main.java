@@ -11,6 +11,7 @@ public class Main {
         Presencial presencial = new Presencial(
                 "1234567890", "Ana Pérez", "Av. Colón", "ana@gmail.com", "0988888888", "Ingeniería", "Segundo", "15:00", "Lunes a Viernes"
         );
+        Virtual virtual = new Virtual("31851438513","santy","io", "nhjasdgvf", "6841638416385", "sowar", "5", "cambridge", "vargas");
 
         System.out.println("---------Estudiante:-------------");
         estudiante.mostrarInformacionPersonal();
@@ -20,6 +21,9 @@ public class Main {
 
         System.out.println("----------Estudiante Presencial:------------");
         presencial.mostrarInformacionPersonal();
+
+        System.out.println("----------Virtual:-----------");
+        virtual.mostrarInformacionPersonal();
     }
 }
 
