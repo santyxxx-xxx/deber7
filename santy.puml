@@ -1,0 +1,28 @@
+@startuml
+
+
+class Persona {
+  - cedula: String
+  - direccion: String
+  - correo: String
+  - telefono: String
+  + mostrarInfoPersonal(): void
+}
+
+class Estudiante {
+  - carrera: String
+  - nivel: int
+}
+
+class Docente {
+  - facultad: String
+  - nivel: int
+  - horasAsignadasClases: int
+}
+
+Persona <|-- Estudiante
+Persona <|-- Docente
+
+
+
+@enduml

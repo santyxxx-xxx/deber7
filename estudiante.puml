@@ -1,0 +1,21 @@
+@startuml
+
+class Estudiante {
+  - carrera: String
+  - nivel: int
+  +mostrarInfo()
+}
+
+class Presencial {
+  - horas: int
+  - horario: String
+}
+class Virtual {
+  - Plataforma: String
+  - Tutor: String
+}
+
+Estudiante <|--Presencial
+Estudiante <|--Virtual
+
+@enduml
